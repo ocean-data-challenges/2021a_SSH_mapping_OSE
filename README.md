@@ -30,7 +30,7 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | DUACS    |    0.88 | 0.07 |       152 | Covariances DUACS DT2018 | example_eval_duacs.ipynb |
 | MIOST    |   0.89 | 0.08 |       139 | Multiscale mapping | example_eval_miost.ipynb |
 | DYMOST   |   0.89 | 0.06 |       129 | Dynamic mapping | example_eval_dymost.ipynb |
-| BNF      |   0.88 | 0.06 |       122 | BFN mapping | example_eval_bfn.ipynb |
+| BFN      |   0.88 | 0.06 |       122 | BFN mapping | example_eval_bfn.ipynb |
 
 
 **µ(RMSE)**: average RMSE score.  
