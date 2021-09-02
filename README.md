@@ -41,28 +41,7 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
 
 ## Download the data
-The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2020a-ssh-mapping-natl60.html) and tagged with DOI: XXXXXXXXXXXXXXXXXX. The website also provides a data handbook. This is the recommended access. This [wiki](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/wiki/AVISO---account-creation) can help you create an AVISO account to access the data. The data are also temporarily available [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/ocean-data-challenges/dc_data1/catalog.html). They are presented with the following directory structure:
-
-```
-. 
-|-- dc_obs
-|   |-- dt_global_alg_phy_l3_20161201-20180131_285-315_23-53.nc
-|   |-- dt_global_c2_phy_l3_20161201-20180131_285-315_23-53.nc 
-|   |-- dt_global_h2g_phy_l3_20161201-20180131_285-315_23-53.nc
-|   |-- dt_global_j2g_phy_l3_20161201-20180131_285-315_23-53.nc
-|   |-- dt_global_j2n_phy_l3_20161201-20180131_285-315_23-53.nc
-|   |-- dt_global_j3_phy_l3_20161201-20180131_285-315_23-53.nc
-|   |-- dt_global_s3a_phy_l3_20161201-20180131_285-315_23-53.nc
-
-|-- dc_maps
-|   |-- OSE_ssh_mapping_BASELINE.nc
-|   |-- OSE_ssh_mapping_BFN.nc
-|   |-- OSE_ssh_mapping_DUACS.nc
-|   |-- OSE_ssh_mapping_DYMOST.nc
-|   |-- OSE_ssh_mapping_MIOST.nc
-|   |-- mdt.nc
-
-```
+The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2020a-ssh-mapping-natl60.html) and tagged with DOI: XXXXXXXXXXXXXXXXXX. The website also provides a data handbook. This [wiki](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/wiki/AVISO---account-creation) can help you create an AVISO account to access the data.
 
 ## Baseline and evaluation
 
