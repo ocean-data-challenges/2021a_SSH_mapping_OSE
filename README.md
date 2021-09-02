@@ -33,7 +33,7 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | BFN      |   0.88 | 0.06 |       122 | BFN mapping | example_eval_bfn.ipynb |
 
 
-**µ(RMSE)**: average RMSE score.  
+**µ(RMSE)**: average RMSE score (best score := 1, worse score := 0).  
 **σ(RMSE)**: standard deviation of the RMSE score.  
 **λx**: minimum spatial scale resolved.   
  
