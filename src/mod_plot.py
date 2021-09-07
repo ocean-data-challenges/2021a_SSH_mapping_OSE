@@ -5,7 +5,7 @@ import matplotlib.pylab as plt
 from scipy import interpolate
 import hvplot.xarray
 import cartopy.crs as ccrs
-
+from matplotlib.patches import Rectangle
 
 def find_wavelength_05_crossing(filename):
     
@@ -165,3 +165,43 @@ def intercomparison_spatial_statistics(baseline_filename, list_of_filename, list
                                              clabel='[%]', cmap='coolwarm', coastline=True)
     
     return figure.cols(2)
+
+
+def hvplot_demo_obs_nadir(list_of_dataset, central_date, delta_t):
+
+    ds_concat_nadirs = xr.concat(list_of_dataset, dim='time')
+    ds_concat_nadirs = ds_concat_nadirs.sortby(ds_concat_nadirs.time)
+    ds_concat_nadirs = ds_concat_nadirs.assign_coords({'longitude': ds_concat_nadirs.longitude, 'latitude': ds_concat_nadirs.latitude})
+
+    ds_concat_nadirs_selection = ds_concat_nadirs.sel(time=slice(central_date - delta_t, central_date + delta_t)).drop(
+        'time')
+
+    plot = ds_concat_nadirs_selection.hvplot.scatter(x='longitude', y='latitude', color='sla_unfiltered',
+                                                     height=300, width=400, cmap = 'gist_stern', datashade=True) 
+
+    return plot
+
+
+def plot_demo_obs(list_of_dataset, central_date, delta_t):
+
+    tmin = central_date - delta_t
+    tmax = central_date + delta_t
+
+    list_of_dataset_sel = []
+    for ds in list_of_dataset:
+        ds_sel = ds.sel(time=slice(tmin, tmax))
+        if ds_sel.time.size > 0:
+            list_of_dataset_sel.append(ds_sel)
+
+    plt.figure(figsize=(10, 10))
+    plt.subplot(111)
+    for ds in list_of_dataset_sel:
+        plt.scatter(ds.longitude % 360., ds.latitude, c=ds.sla_unfiltered, s=20, cmap='gist_stern')
+    ax = plt.gca()
+    ax.add_patch(Rectangle((295, 33), 10, 10, fill=None, alpha=1))
+    plt.xlabel('longitude', fontweight='bold')
+    plt.ylabel('latitude', fontweight='bold')
+    plt.title(f'SLA @ altimeter track')
+    plt.colorbar(orientation='horizontal')
+    plt.text(298, 43.5,'STUDY AREA')
+    plt.show()

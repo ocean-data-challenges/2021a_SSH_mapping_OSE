@@ -19,14 +19,26 @@ def interp_on_alongtrack(gridded_dataset,
                          is_circle=True):
     
     # Interpolate maps onto alongtrack dataset
-    x_axis, y_axis, z_axis, grid = read_l4_dataset(gridded_dataset,
-                                                   lon_min=lon_min,
-                                                   lon_max=lon_max, 
-                                                   lat_min=lat_min,
-                                                   lat_max=lat_max, 
-                                                   time_min=time_min,
-                                                   time_max=time_max,
-                                                   is_circle=is_circle)
+    if isinstance(gridded_dataset, str):
+        x_axis, y_axis, z_axis, grid = read_l4_dataset(gridded_dataset,
+                                                       lon_min=lon_min,
+                                                       lon_max=lon_max, 
+                                                       lat_min=lat_min,
+                                                       lat_max=lat_max, 
+                                                       time_min=time_min,
+                                                       time_max=time_max,
+                                                       is_circle=is_circle)
+    elif isinstance(gridded_dataset, list):
+        
+        x_axis, y_axis, z_axis, grid = read_l4_dataset_from_aviso(gridded_dataset[0],
+                                                                  gridded_dataset[1],
+                                                                  lon_min=lon_min,
+                                                                  lon_max=lon_max, 
+                                                                  lat_min=lat_min,
+                                                                  lat_max=lat_max, 
+                                                                  time_min=time_min,
+                                                                  time_max=time_max,
+                                                                  is_circle=is_circle)
     
     ssh_map_interp = pyinterp.trivariate(grid, 
                                          ds_alongtrack["longitude"].values, 
