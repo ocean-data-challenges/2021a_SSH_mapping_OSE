@@ -40,6 +40,9 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 ## Quick start
 You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
 
+To work with code and demo notebooks using *conda*, execute the following command:
+`conda env create -f environment.yml`
+
 ## Download the data
 The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2021a-ssh-mapping-ose.html) and tagged with DOI: XXXXXXXXXXXXXXXXXX. The website also provides a data handbook. This [wiki](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/wiki/AVISO---account-creation) can help you create an AVISO account to access the data.
 
