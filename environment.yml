@@ -27,6 +27,7 @@ dependencies:
   - hvplot
   - pyinterp
   - xrft
+  - pydap
   - tabulate
   - pip
   - pip:
