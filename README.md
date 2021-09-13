@@ -5,7 +5,7 @@
 This repository contains codes and sample notebooks for downloading and processing the SSH mapping data challenge.
 
 The quickstart can be run online by clicking here:
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb)
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2021a_SSH_mapping_OSE/master?filepath=quickstart.ipynb)
 
 ## Motivation
 
