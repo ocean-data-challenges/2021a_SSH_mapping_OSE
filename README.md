@@ -38,7 +38,7 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 **λx**: minimum spatial scale resolved.   
  
 ## Quick start
-You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
+You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2021a_SSH_mapping_OSE/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
 
 To work with code and demo notebooks using *conda*, execute the following command:
 `conda env create -f environment.yml`
