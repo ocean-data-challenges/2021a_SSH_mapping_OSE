@@ -9,7 +9,7 @@ The quickstart can be run online by clicking here:
 
 ## Motivation
 
-The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _Observation System Experiment_ framework: Satellite observations are from real sea surface height data from altimeter. The practical goal of the challenge is to investigate the best mapping method according to scores described below and in Jupyter notebooks.
+The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _**O**bservation **S**ystem **E**xperiment_ (**OSE**) framework: Satellite observations are from real sea surface height data from altimeter. The practical goal of the challenge is to investigate the best mapping method according to scores described below and in Jupyter notebooks.
 
 ### Observations
 The SSH observations include SARAL/Altika, Jason 2, Jason 3, Sentinel 3A, Haiyang-2A and Cryosat-2 altimeter data. This nadir altimeters constellation was operating during the 20170101-20171231 period. Note that the Cryosat-2 altimeter data are not taken in the mapping to perform the independent assessment of the various reconstructions. 
@@ -24,17 +24,17 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 
 ## Leaderboard
 
-| Method   |   µ(RMSE)  |   σ(RMSE) |   λx (km) | Notes             | Reference                |
+| Method   |   µ(RMSE<sub>s</sub>)  |   σ(RMSE<sub>s</sub>) |   λx (km) | Notes             | Reference                |
 |:---------|-----------:|----------:|----------:|:------------------|:-------------------------|
-| BASELINE |    0.85 | 0.09 |       140 | Covariances BASELINE OI | example_eval_baseline.ipynb |
-| DUACS    |    0.88 | 0.07 |       152 | Covariances DUACS DT2018 | example_eval_duacs.ipynb |
-| MIOST    |   0.89 | 0.08 |       139 | Multiscale mapping | example_eval_miost.ipynb |
-| DYMOST   |   0.89 | 0.06 |       129 | Dynamic mapping | example_eval_dymost.ipynb |
-| BFN      |   0.88 | 0.06 |       122 | BFN mapping | example_eval_bfn.ipynb |
+| BASELINE |    0.85 | 0.09 |       140 | Covariances BASELINE OI | [`example_eval_baseline.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_baseline.ipynb) |
+| DUACS    |    0.88 | 0.07 |       152 | Covariances DUACS DT2018 | [`example_eval_duacs.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_duacs.ipynb) |
+| MIOST    |   0.89 | 0.08 |       139 | Multiscale mapping | [`example_eval_miost.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_miost.ipynb) |
+| DYMOST   |   0.89 | 0.06 |       129 | Dynamic mapping | [`example_eval_dymost.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_dymost.ipynb) |
+| BFN      |   0.88 | 0.06 |       122 | BFN mapping | [`example_eval_bfn.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_bfn.ipynb) |
 
 
-**µ(RMSE)**: average RMSE score (best score := 1, worse score := 0).  
-**σ(RMSE)**: standard deviation of the RMSE score.  
+**µ(RMSE<sub>s</sub>)**: average RMSE score (best score := 1, worse score := 0).  
+**σ(RMSE<sub>s</sub>)**: standard deviation of the RMSE score.  
 **λx**: minimum spatial scale resolved.   
  
 ## Quick start
