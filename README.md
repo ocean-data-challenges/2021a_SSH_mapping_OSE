@@ -44,7 +44,7 @@ To work with code and demo notebooks using *conda*, execute the following comman
 `conda env create -f environment.yml`
 
 ## Download the data
-The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2021a-ssh-mapping-ose.html) and tagged with DOI: XXXXXXXXXXXXXXXXXX. The website also provides a data handbook. This [wiki](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/wiki/AVISO---account-creation) can help you create an AVISO account to access the data. The demo notebook [`example_data_access_aviso.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_data_access_aviso.ipynb) show how to access and manipulate the data with python libraries.
+The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2021a-ssh-mapping-ose.html) and tagged with DOI: XXXXXXXXXXXXXXXXXX. The website also provides a data handbook. This [wiki](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/wiki/AVISO---account-creation) can help you create an AVISO account to access the data. The demo notebook [`example_data_access_aviso.ipynb`](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_data_access_aviso.ipynb) shows how to access and manipulate the data with python libraries.
 
 ## Baseline and evaluation
 
