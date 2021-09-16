@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4045400.svg)](https://doi.org/10.5281/zenodo.4045400) NOT CORRECT (WORK IN PROGRESS)
+[![DOI](https://zenodo.org/badge/368462214.svg)](https://zenodo.org/badge/latestdoi/368462214)
 
 # SSH Mapping Data Challenge 2021a
 
