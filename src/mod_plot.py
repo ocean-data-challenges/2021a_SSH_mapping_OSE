@@ -77,7 +77,7 @@ def plot_spatial_statistics(filename):
 #     except KeyError:
 #         figure = ds['rmse'].hvplot.image(x='lon', y='lat', z='rmse', clabel='RMSE [m]', cmap='Reds')
 
-    ds['rmse'].hvplot.image(x='lon', y='lat', z='rmse', clabel='RMSE [m]', cmap='Reds')
+    figure = ds['rmse'].hvplot.image(x='lon', y='lat', z='rmse', clabel='RMSE [m]', cmap='Reds')
         
     return figure
 
