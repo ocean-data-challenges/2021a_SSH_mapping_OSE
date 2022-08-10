@@ -58,9 +58,9 @@ def read_l4_dataset(list_of_file,
     ds = ds.where((ds["lon"]%360. >= lon_min) & (ds["lon"]%360. <= lon_max), drop=True)
     ds = ds.where((ds["lat"] >= lat_min) & (ds["lat"] <= lat_max), drop=True)
     
-    x_axis = pyinterp.Axis(ds["lon"][:]%360., is_circle=is_circle)
-    y_axis = pyinterp.Axis(ds["lat"][:])
-    z_axis = pyinterp.TemporalAxis(ds["time"][:])
+    x_axis = pyinterp.Axis(ds["lon"][:].values%360., is_circle=is_circle)
+    y_axis = pyinterp.Axis(ds["lat"][:].values)
+    z_axis = pyinterp.TemporalAxis(ds["time"][:].values)
     
     var = ds['ssh'][:]
     var = var.transpose('lon', 'lat', 'time')
@@ -98,9 +98,9 @@ def read_l4_dataset_from_aviso(url_dataset,
     ds = ds.where((ds["lon"]%360. >= lon_min) & (ds["lon"]%360. <= lon_max), drop=True)
     ds = ds.where((ds["lat"] >= lat_min) & (ds["lat"] <= lat_max), drop=True)
     
-    x_axis = pyinterp.Axis(ds["lon"][:]%360., is_circle=is_circle)
-    y_axis = pyinterp.Axis(ds["lat"][:])
-    z_axis = pyinterp.TemporalAxis(ds["time"][:])
+    x_axis = pyinterp.Axis(ds["lon"][:].values%360., is_circle=is_circle)
+    y_axis = pyinterp.Axis(ds["lat"][:].values)
+    z_axis = pyinterp.TemporalAxis(ds["time"][:].values)
     
     var = ds['ssh'][:]
     var = var.transpose('lon', 'lat', 'time')
