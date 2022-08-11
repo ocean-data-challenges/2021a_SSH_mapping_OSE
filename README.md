@@ -34,7 +34,6 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | 4DVarNet (v2021) |   **0.89** |  **0.06** |       122 | 4DVarNet mapping | [example_eval_4DVarnet.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_4dvarnet.ipynb) |
 | 4DVarNet (v2022) |   **0.89** | 0.09 |       **109** | 4DVarNet mapping | [example_eval_4DVarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_4dvarnet_v2022.ipynb) |
 
-| 4DVarNet |   0.888983 | 0.0891429 |       109 | 4DVarNet mapping | example_eval_4DVarnet.ipynb |
 
 
 **µ(RMSE)**: average RMSE score.  
