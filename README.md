@@ -66,6 +66,9 @@ The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/da
 |   |-- OSE_ssh_mapping_MIOST.nc
 |   |-- OSE_ssh_mapping_4dvarNet.nc
 |   |-- OSE_ssh_mapping_4dvarNet_2022.nc (NOT on AVISO+ yet !!!!)
+|   |-- OSE_ssh_mapping_neurost_ssh-sst.nc (Also using SST)
+|   |-- OSE_ssh_mapping_convlstm_ssh-sst.nc (Also using SST)
+|   |-- OSE_ssh_mapping_convlstm_ssh.nc 
 |   |-- mdt.nc
 
 ```
