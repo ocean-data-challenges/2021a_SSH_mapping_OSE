@@ -35,8 +35,8 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | 4DVarNet (v2022) |   0.89 | 0.09 |       109 | 4DVarNet mapping | [example_eval_4DVarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_4dvarnet_v2022.ipynb) |
 | 4DVarQG |   **0.90** | **0.06** |   **106** | 4DVarQG mapping | [example_eval_4dvarqg.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_4dvarqg.ipynb) |
 | ConvLSTM SSH |   **0.90** | **0.06** | 113 | ConvLSTM SSH | [example_eval_convlstm_ssh.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_convlstm_ssh.ipynb) |
-| ConvLSTM SSH-SST<sup>1</sup> |   **0.90** | **0.06** | **100** | ConvLSTM SSH-SST | [example_eval_convlstm_ssh.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_convlstm_ssh-sst.ipynb) |
-| NeurOST SSH-SST<sup>1</sup> |   **0.90** | **0.06** | 114 | NeurOST SSH-SST (trained for global mapping) | [example_eval_convlstm_ssh.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_neurost_ssh-sst.ipynb) |
+| ConvLSTM SSH-SST<sup>1</sup> |   **0.90** | **0.06** | **100** | ConvLSTM SSH-SST | [example_eval_convlstm_ssh-sst.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_convlstm_ssh-sst.ipynb) |
+| NeurOST SSH-SST<sup>1</sup> |   **0.90** | **0.06** | 114 | NeurOST SSH-SST (trained for global mapping) | [example_eval_neurost_ssh-sst.ipynb](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE/blob/master/notebooks/example_eval_neurost_ssh-sst.ipynb) |
 
 <sup>1</sup>: These methods additionally use L4 SST from the NASA MUR product as input.
 
